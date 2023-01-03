@@ -30,6 +30,39 @@ The control of creating objects and managing the spring components is taken care
 ### Annotations:
 * @SpringBootApplication includes 
     {@Configuration, @ComponentScan, @EnableAutoConfiguration}
+
+``` Java
+import org.springframework.boot.SpringApplication;
+
+@SpringBootApplication
+public class Application {
+
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
+
+}
+```
+
 * @EnableAutoConfiguration 
     {tomcat, dispatcher server, MVC}
+
 * @ConfigurationProperties maps properties to a @Component
+``` Java
+@ConfigurationProperties(prefix = "mail") 
+public class ConfigProperties { 
+
+    private String hostName; 
+    private int port; 
+    private String from; 
+
+}
+
+
+# application.properties file:
+mail.hostname=host@mail.com
+mail.port=9000
+mail.from=mailer@mail.com
+
+
+```
