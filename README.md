@@ -43,11 +43,20 @@ public class Application {
 
 }
 ```
-
 * @EnableAutoConfiguration 
     {tomcat, dispatcher server, MVC}
 
 * @ConfigurationProperties maps properties to a @Component
+
+
+application.properties file:
+
+```
+mail.hostname=host@mail.com
+mail.port=9000
+mail.from=mailer@mail.com
+```
+
 ``` Java
 @ConfigurationProperties(prefix = "mail") 
 public class ConfigProperties { 
@@ -57,12 +66,4 @@ public class ConfigProperties {
     private String from; 
 
 }
-
-
-# application.properties file:
-mail.hostname=host@mail.com
-mail.port=9000
-mail.from=mailer@mail.com
-
-
 ```
