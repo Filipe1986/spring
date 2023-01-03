@@ -13,6 +13,11 @@ IOC container is responsible to inject the dependency.
 
 Dependency Injection:
 
+Dependency Injection is a *design pattern* that allows the spring container to ‘inject’ objects into other objects.
+
+The control of creating objects and managing the spring components is taken care of by the Spring containers.
+
+
 * makes the code loosely coupled so easy to maintain
 * makes the code easy to test
 
