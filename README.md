@@ -1,10 +1,12 @@
 # Spring
 
-![framwwork](https://github.com/Filipe1986/spring/blob/main/images/spring-framework.png)
+
+<img src="https://github.com/Filipe1986/spring/blob/main/images/spring-framework.png" width="500">
 
 Eco system
 
-![framwwork](https://github.com/Filipe1986/spring/blob/main/images/Spring%20Ecosystem.png)
+<img src="https://github.com/Filipe1986/spring/blob/main/images/Spring%20Ecosystem.png" width="500">
+
 
 ### Inversion Of Control (IOC) and Dependency Injection (DI)
 IOC container is responsible to inject the dependency. 
